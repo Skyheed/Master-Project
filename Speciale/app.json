@@ -1,0 +1,65 @@
+{
+  "expo": {
+    "name": "VandCenterSyd",
+    "slug": "vandcentersyd",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/VCS_Load_logo.png",
+    "scheme": "vandcentersyd",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "androidNavigationBar": {
+      "visible": "sticky-immersive"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.sdu.vcs",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/VCS_Load_logo.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.sdu.vcs"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ],
+      [
+        "expo-video",
+        {
+          "supportsBackgroundPlayback": true,
+          "supportsPictureInPicture": true
+        }
+      ],
+      "expo-font"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "66c363b6-58ec-43e6-9da2-b7458e514cfb"
+      }
+    }
+  }
+}
